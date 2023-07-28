@@ -1,0 +1,519 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mobile {
+  display: none;
+}
+header {
+  width: 100%;
+  height: 6vh;
+  margin: 10px;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header ul {
+  display: flex;
+  gap: 30px;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none;
+  color: hsl(273, 4%, 51%);
+}
+header .rightMenu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+header button {
+  padding: 10px 20px;
+  background: hsl(0, 0%, 98%);
+  cursor: pointer;
+}
+header button a {
+  text-decoration: none;
+  color: hsl(256, 26%, 20%);
+}
+
+.sectionOne {
+  width: 100%;
+  height: 100vh;
+  background: hsl(256, 26%, 20%);
+  position: relative;
+}
+
+.sectionOne hr {
+  position: absolute;
+  width: 150px;
+  top: 5rem;
+  left: 10rem;
+}
+.sectionOne h1 {
+  position: absolute;
+  top: 11.5rem;
+  left: 10rem;
+  font-size: 50px;
+  width: 350px;
+  color: #fff;
+  line-height: 1;
+}
+.sectionOne p {
+  color: #fff;
+  width: 550px;
+  position: absolute;
+  top: 19.5rem;
+  left: 10rem;
+  font-size: 18px;
+}
+.sectionOne button {
+  position: absolute;
+  top: 25.5rem;
+  left: 10rem;
+  padding: 10px 20px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.sectionOne .patternRight {
+  position: absolute;
+  right: 0;
+}
+.sectionOne .introImage {
+  position: absolute;
+  right: 14rem;
+  top: 9rem;
+}
+.sectionOne .patternLeft {
+  position: absolute;
+  top: 30rem;
+  left: -2rem;
+}
+
+.sectionTwo {
+  width: 100%;
+  height: 70vh;
+  padding: 150px;
+}
+.sectionTwo hr {
+  width: 150px;
+  margin-bottom: 30px;
+}
+.sectionTwo h1 {
+  font-size: 30px;
+  color: hsl(273, 4%, 51%);
+  margin-bottom: 40px;
+}
+.sectionTwo .blogPost {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.sectionTwo .post {
+  width: 345px;
+}
+.sectionTwo img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+.sectionTwo .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.sectionTwo .text {
+  font-size: 16.5px;
+  line-height: 1.35;
+}
+
+.sectionThree {
+  width: 100%;
+  height: 70vh;
+  padding: 150px;
+}
+.sectionThree .container {
+  background: hsl(256, 26%, 20%);
+  padding: 30px;
+  height: 255px;
+  position: relative;
+}
+.sectionThree .pattern {
+  position: absolute;
+  right: 0;
+  bottom: 0rem;
+}
+.sectionThree button {
+  position: absolute;
+  right: 5rem;
+  bottom: 6rem;
+  padding: 10px 20px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.sectionThree h1 {
+  color: #fff;
+  margin: 40px 20px 0 30px;
+  font-size: 45px;
+  width: 380px;
+}
+footer {
+  width: 100%;
+  height: 50vh;
+  padding: 40px 150px;
+  background: hsl(0, 0%, 98%);
+  position: relative;
+}
+footer .footerPattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+footer .footerMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .socialLinks ul {
+  display: flex;
+  list-style: none;
+  width: 50px;
+  gap: 15px;
+}
+footer hr {
+  width: 1305px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+footer .footerBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footerBody h5 {
+  color: hsl(273, 4%, 51%);
+  margin-bottom: 30px;
+}
+footer .footerBody ul {
+  list-style: none;
+}
+footer .footerBody ul li {
+  padding-top: 10px;
+  font-size: 13px;
+}
+footer .footerBody ul a {
+  text-decoration: none;
+  color: hsl(256, 26%, 20%);
+}
+footer p {
+  margin: 55px 430px;
+  color: hsl(273, 4%, 51%);
+}
+
+/* media query */
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .design {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  header {
+    height: 8vh;
+    position: fixed;
+  }
+  header .menu {
+    justify-content: flex-start;
+    gap: 13rem;
+    padding-top: 20px;
+  }
+  /* #hamburg {
+    display: none;
+  } */
+  header ul {
+    display: block;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  header ul li {
+    padding-top: 30px;
+    text-align: center;
+  }
+  header ul li a {
+    color: #fff;
+  }
+  header .rightMenu {
+    width: 100%;
+    position: fixed;
+    display: block;
+    align-items: center;
+    gap: 50px;
+    top: -100rem;
+    left: 0rem;
+    padding: 50px;
+    background: hsl(256, 26%, 20%);
+    height: 90vh;
+    transition: ease-in-out 0.8s;
+    z-index: 1;
+  }
+  header button {
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  header button a {
+    color: #fff;
+  }
+  #hamburgClose {
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+  }
+  .show {
+    top: 0 !important;
+  }
+  .sectionOne {
+    height: 65vh;
+    background: hsl(256, 26%, 20%);
+    position: relative;
+  }
+
+  .sectionOne hr {
+    display: none;
+  }
+  .sectionOne h1 {
+    top: 5rem;
+    left: 3rem;
+    font-size: 40px;
+    width: 300px;
+    text-align: center;
+  }
+  .sectionOne p {
+    width: 350px;
+    line-height: 1.3;
+    top: 11rem;
+    left: 1rem;
+    font-size: 16px;
+    text-align: center;
+  }
+  .sectionOne button {
+    position: absolute;
+    top: 18rem;
+    left: 8.5rem;
+  }
+  .sectionOne .patternRight {
+    position: absolute;
+    right: 0.5rem;
+    bottom: -12rem;
+  }
+
+  .sectionOne .patternLeft {
+    top: 0;
+    left: 0;
+  }
+
+  .sectionTwo {
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+  }
+  .sectionTwo hr {
+    margin-left: 20px;
+  }
+  .sectionTwo h1 {
+    font-size: 34px;
+    width: 300px;
+    margin-left: -20px;
+  }
+  .sectionTwo .blogPost {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .sectionTwo .post {
+    width: 345px;
+    text-align: center;
+  }
+
+  .sectionThree {
+    width: 100%;
+    height: 100vh;
+    padding: 40px 10px;
+  }
+  .sectionThree .container {
+    background: hsl(256, 26%, 20%);
+    padding: 30px;
+    height: 300px;
+    position: relative;
+    top: 20rem;
+  }
+  .sectionThree .pattern {
+    top: 0rem;
+  }
+  .sectionThree button {
+    position: absolute;
+    right: 6.5rem;
+    bottom: 2rem;
+  }
+  .sectionThree h1 {
+    margin: 30px 20px 0 5px;
+    font-size: 35px;
+    width: 250px;
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
+    background: hsl(0, 2%, 88%);
+    position: relative;
+  }
+  footer .footerMenu {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .socialLinks ul {
+    margin-right: 90px;
+  }
+  footer hr {
+    width: 300px;
+  }
+  footer .footerBody {
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer .footerBody h5 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  footer .footerBody ul li {
+    padding-top: 10px;
+    font-size: 13px;
+    text-align: center;
+  }
+  footer .footerBody ul a {
+    text-decoration: none;
+    color: hsl(256, 26%, 20%);
+    font-weight: bold;
+  }
+}
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* .sectionOne {
+    width: 100%;
+    height: 100vh;
+    background: hsl(256, 26%, 20%);
+    position: relative;
+  }
+
+  .sectionOne hr {
+    left: 3rem;
+  }
+  .sectionOne h1 {
+    left: 3rem;
+  }
+  .sectionOne p {
+    width: 350px;
+    left: 3rem;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .sectionOne button {
+    top: 26rem;
+  }
+  .sectionOne .patternRight {
+    width: 250px;
+  }
+  .sectionOne .introImage {
+    width: 350px;
+    position: absolute;
+    right: 1rem;
+    top: 20rem;
+  }
+  .sectionOne .patternLeft {
+    position: absolute;
+    top: 30rem;
+    left: -2rem;
+  }
+
+  .sectionTwo {
+    padding: 80px;
+  }
+  .sectionTwo .blogPost {
+    gap: 55px;
+  }
+  .sectionTwo .post {
+    width: 430px;
+  }
+  .sectionTwo img {
+    margin-left: 20px;
+  }
+
+  .sectionThree {
+    padding: 80px 10px;
+  }
+  .sectionThree .container {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 40px;
+  }
+  footer .footerMenu {
+    justify-content: flex-start;
+    gap: 25rem;
+  }
+  footer .socialLinks ul {
+    display: flex;
+    list-style: none;
+    width: 50px;
+    gap: 15px;
+  }
+  footer hr {
+    width: 700px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  footer .footerBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footerBody h5 {
+    color: hsl(273, 4%, 51%);
+    margin-bottom: 30px;
+  }
+  footer .footerBody ul {
+    list-style: none;
+  }
+  footer .footerBody ul li {
+    padding-top: 10px;
+    font-size: 13px;
+  }
+  footer .footerBody ul a {
+    text-decoration: none;
+    color: hsl(256, 26%, 20%);
+  }
+  footer p {
+    margin: 55px 430px;
+    color: hsl(273, 4%, 51%);
+  } */
+}
